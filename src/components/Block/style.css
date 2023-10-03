@@ -1,0 +1,27 @@
+.block {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  background: grey;
+  border: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+}
+
+.block.animated {
+  animation: block-move 10s linear infinite;
+}
+
+@keyframes block-move {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
